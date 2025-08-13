@@ -1,0 +1,21 @@
+{
+    "name": "alvar27/url-dcrypt",
+    "description": "Library prosedural untuk enkripsi URL secara dinamis dengan AES-256-CBC, SHA3-256, dan Base64",
+    "type": "library",
+    "autoload": {
+        "files": ["src/functions.php"]
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-openssl": "*",
+        "ext-hash": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alvar27"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
