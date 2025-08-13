@@ -26,6 +26,7 @@ Install via Composer:
 ```composer require alvar27/url-dcrypt```
 <br>
 <br>
+<br>
 
 ## 🔑 Configuration
 Make sure to define a constant SECRET_KEY before using the functions:
