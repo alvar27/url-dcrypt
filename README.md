@@ -36,8 +36,7 @@ Make sure to define a constant SECRET_KEY before using the functions:
 ```
 define('SECRET_KEY', 'your-32-byte-secret-key-goes-here');
 ```
-<br>
-<br>
+
 The secret key must be exactly 32 bytes for AES-256-CBC. You can use a key generator or hash a passphrase with SHA-256 to ensure proper length.
 
 <br>
@@ -70,9 +69,7 @@ To prevent errors or decryption failures, you can first verify whether a given v
 ```
 is_ciphertext()
 ```
-<br>
 Example :
-<br>
 
 ```
 if (is_ciphertext($data)) {
