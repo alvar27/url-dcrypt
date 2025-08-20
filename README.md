@@ -31,7 +31,9 @@ Install via Composer:
 ## 🔑 Configuration
 Make sure to define a constant SECRET_KEY before using the functions:
 
-```define('SECRET_KEY', 'your-32-byte-secret-key-goes-here');```
+```
+define('SECRET_KEY', 'your-32-byte-secret-key-goes-here');
+```
 <br>
 <br>
 The secret key must be exactly 32 bytes for AES-256-CBC. You can use a key generator or hash a passphrase with SHA-256 to ensure proper length.
@@ -43,11 +45,40 @@ The secret key must be exactly 32 bytes for AES-256-CBC. You can use a key gener
 Using this library is as simple as calling the provided functions for encryption and decryption.
 
 encryption:
-```encrypt_url('your_plaintext')```
+<br>
+```
+encrypt_url("your_plaintext")
+```
 <br>
 decryption:
-```decrypt_url('your_ciphertext')```
+<br>
+```
+decrypt_url("your_ciphertext")
+```
+<br>
 
+##### Making the URL More Dynamic
+To ensure that the encrypted URL is refreshed dynamically (for example, when the user clicks the refresh icon in the browser), include the following function at the end of your HTML page, just like adding JavaScript:
+<br>
+```
+<?php update_url() ?>
+```
+<br>
+##### Ciphertext Validation (Optional)
+To prevent errors or decryption failures, you can first verify whether a given value is indeed ciphertext by using: 
+<br>
+```
+is_ciphertext()
+```
+<br>
+Example :
+<br>
+
+```
+if (is_ciphertext($data)) {
+    $plaintext = decrypt_url($data);
+}
+```
 
 <br>
 <br>
