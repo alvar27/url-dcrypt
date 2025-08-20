@@ -23,7 +23,9 @@ This library helps protect your web application from SQL Injection attacks by ob
 ## 📦 Installation
 Install via Composer:
 
-```composer require alvar27/url-dcrypt```
+```
+composer require alvar27/url-dcrypt
+```
 <br>
 <br>
 <br>
@@ -45,13 +47,10 @@ The secret key must be exactly 32 bytes for AES-256-CBC. You can use a key gener
 Using this library is as simple as calling the provided functions for encryption and decryption.
 
 encryption:
-<br>
 ```
 encrypt_url("your_plaintext")
 ```
-<br>
 decryption:
-<br>
 ```
 decrypt_url("your_ciphertext")
 ```
@@ -64,6 +63,7 @@ To ensure that the encrypted URL is refreshed dynamically (for example, when the
 <?php update_url() ?>
 ```
 <br>
+
 ##### Ciphertext Validation (Optional)
 To prevent errors or decryption failures, you can first verify whether a given value is indeed ciphertext by using: 
 <br>
