@@ -5,6 +5,11 @@ This library helps protect your web application from SQL Injection attacks by ob
 <br>
 <br>
 
+## 👨‍💻 Author
+Created by FAISAL AL VARISI [@alvar27](https://github.com/alvar27)
+<br>
+Feel free to fork, improve, or contribute. Happy coding!
+
 ## 📁 Features
 
 🔒 AES-256-CBC encryption
@@ -80,7 +85,4 @@ if (is_ciphertext($data)) {
 <br>
 <br>
 
-## 👨‍💻 Author
-Created by [@alvar27](https://github.com/alvar27)
-<br>
-Feel free to fork, improve, or contribute. Happy coding!
+
